@@ -1,0 +1,24 @@
+---
+name: Skyscraper 1
+id: '1'
+energy_consumption:
+  floors:
+  - name: Floor 1
+    rooms:
+    - name: Room 1
+      granularity: hourly
+      series:
+      - timestamp: 2016-05-01T00:00Z
+        value: 91.27
+      - timestamp: 2016-05-01T01:00Z
+        value: 52.72
+    - name: Room 2
+      granularity: hourly
+      series:
+      - timestamp: 2016-05-01T00:00Z
+        value: 42.37
+      - timestamp: 2016-05-01T01:00Z
+        value: 15.22
+energy_renewable: {}
+air_quality: {}
+air_temperature: {}
