@@ -3,9 +3,14 @@ import ChartistGraph from "react-chartist";
 
 const AirQualityLine = () => {
   var data = {
-    labels: ["Room A"],
-    series: [[10, 11, 12, 13]],
-  };
+    labels: ['2016', '2017', '2018', '2019', '2020'],
+    series: [
+        [94, 60, 30, 55, 60],
+        [13, 45, 29, 85, 93],
+        [55, 66, 77, 88, 99],
+        [67, 12, 89, 23, 43]
+      ]
+    }
 
   var options = {
     high: 100,
@@ -13,7 +18,7 @@ const AirQualityLine = () => {
     width: 800,
     axisX: {
       labelInterpolationFnc: function (value, index) {
-        return index % 2 === 0 ? value : null;
+        return index % 1 === 0 ? value : null;
       },
     },
   };
