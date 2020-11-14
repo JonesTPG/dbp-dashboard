@@ -31,12 +31,12 @@ const AirQualityLine = () => {
       <div className="row">
         <ChartistGraph data={data} options={options} type={type} />
 <div>
-<div class='textStyle'>Room A</div>       <div></div><div class='box red'></div>
+<div className='textStyle'>Room A</div>       <div></div><div className='box red'></div>
 
-<div class='textStyle'>Room B</div>       <div></div><div class='box yellow'></div>
+<div className='textStyle'>Room B</div>       <div></div><div className='box yellow'></div>
 
-<div class='textStyle'>Room C</div>       <div></div><div class='box orange'></div>
-<div class='textStyle'>Room D</div>       <div></div><div class='box lightRed'></div>
+<div className='textStyle'>Room C</div>       <div></div><div className='box orange'></div>
+<div className='textStyle'>Room D</div>       <div></div><div className='box lightRed'></div>
 
 
 </div>
