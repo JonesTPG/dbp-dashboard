@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import AirQualityBar from "./components/AirQualityBar";
 
 const DashboardSection = () => {
-    return ( <> <p> vasen puoli</p> </>  );
-}
- 
+  return (
+    <>
+      <AirQualityBar></AirQualityBar>
+    </>
+  );
+};
+
 export default DashboardSection;
