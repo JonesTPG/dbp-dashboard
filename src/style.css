@@ -8,3 +8,35 @@
   border-color: black;
   padding: 1rem;
 }
+
+.box {
+  float: left;
+  height: 10px;
+  width: 50px;
+  margin-bottom: 5px;
+  clear: both;
+  margin-right: 0.2rem;
+}
+
+.yellow {
+  background-color: #F5C63E;
+}
+
+.red {
+  background-color:#D71E05;
+}
+
+.orange {
+  background-color:#D17905;
+}
+
+.lightRed {
+  background-color: #F05B4F;
+}
+
+.textStyle {
+  font-size: smaller;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

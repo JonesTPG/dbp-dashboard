@@ -10,16 +10,16 @@ const AlertSection = () => {
   useEffect(() => {
     setTimeout(() => {
       setAlert1(true);
-    }, 1000);
+    }, 10000);
     setTimeout(() => {
       setAlert2(true);
-    }, 3000);
+    }, 20000);
     setTimeout(() => {
       setAlert3(true);
-    }, 6000);
+    }, 40000);
     setTimeout(() => {
       setAlert4(true);
-    }, 9000);
+    }, 50000);
   }, []);
 
   return (

@@ -35,7 +35,7 @@ const AirQualityBar = () => {
   };
 
   var options = {
-    high: 100,
+    high: 200,
     low: 0,
     width: 200,
     axisX: {

@@ -30,7 +30,17 @@ const AirQualityLine = () => {
       <h4>Air quality of different rooms over time</h4>
       <div className="row">
         <ChartistGraph data={data} options={options} type={type} />
-      </div>
+<div>
+<div class='textStyle'>Room A</div>       <div></div><div class='box red'></div>
+
+<div class='textStyle'>Room B</div>       <div></div><div class='box yellow'></div>
+
+<div class='textStyle'>Room C</div>       <div></div><div class='box orange'></div>
+<div class='textStyle'>Room D</div>       <div></div><div class='box lightRed'></div>
+
+
+</div>
+</div>
     </>
   );
 };
