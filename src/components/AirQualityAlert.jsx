@@ -29,7 +29,7 @@ const AirQualityAlert = () => {
           options={options}
           type={type}
         />
-        <p>Room B has dangerously low air quality.</p>
+        <p>Room B has dangerously low (120 Bq/m3) air quality.</p>
       </div>
     </>
   );
