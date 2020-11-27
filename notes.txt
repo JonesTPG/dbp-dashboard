@@ -1,0 +1,12 @@
+
+
+- AlertSection.jsx:ään erilaisia alertteja liittyen esimerkiksi seuraaviin tilanteisiin:
+    * hyvää säätä luvassa, odotettavissa 70% enemmän energiaa kuin viime viikkona
+    * huonoa säätä luvassa, odotettavissa 40% vähemmän energiaa kuin viime viikkona
+      -> skyscraperin oma sähköntuotanto ei riitä, pitää ostaa muualta
+    * huoneessa X ei ole kerätty energiaa tänään, aurinkopaneeli voi olla rikki
+
+- lisätään DashboardSection.jsx:ään kuvaajia liittyen kerättyyn aurinkoenergiaan
+
+- lisätään mahdollisesti DashboardSection.jsx:ään kuvaajia liittyen sääennusteeseen
+    * tällä tavalla saataisiin näkyviin sekä ulkoista että sisäistä dataa
