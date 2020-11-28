@@ -2,6 +2,15 @@
   display: flex;
 }
 
+.column2{
+  flex: 50%;
+}
+
+.column3{
+  flex: 50%;
+  text-align: center;
+}
+
 .column {
   flex: 50%;
   border-style: solid;

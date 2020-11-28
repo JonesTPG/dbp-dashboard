@@ -9,8 +9,11 @@ const DashboardSection = () => {
   return (
     <>
       <h3>Renewable Energy Section</h3>
+      <div className="row">
       <RenewableAmount></RenewableAmount>
       <RenewableTotal></RenewableTotal>
+      </div>
+
       <RenewableSeasonal></RenewableSeasonal>
       <h3>AirQuality Section</h3>
       <AirQualityBar></AirQualityBar>

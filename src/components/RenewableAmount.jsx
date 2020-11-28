@@ -3,9 +3,10 @@ import ChartistGraph from "react-chartist";
 
 const RenewableAmount = () => {
   const [value1, setValue1] = useState(70);
-  const [value2, setValue2] = useState(70);
-  const [value3, setValue3] = useState(70);
-  const [value4, setValue4] = useState(70);
+  const [value2, setValue2] = useState(54);
+  const [value3, setValue3] = useState(45);
+  const [value4, setValue4] = useState(37);
+  const [value5, setValue5] = useState(62);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,34 +14,26 @@ const RenewableAmount = () => {
       setValue2(Math.floor(Math.random() * 101));
       setValue3(Math.floor(Math.random() * 101));
       setValue4(Math.floor(Math.random() * 101));
+      setValue5(Math.floor(Math.random() * 101));
+
     }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   var data = {
-    labels: ["Room A"],
-    series: [[value1]],
-  };
-  var data2 = {
-    labels: ["Room B"],
-    series: [[value2]],
-  };
-  var data3 = {
-    labels: ["Room C"],
-    series: [[value3]],
-  };
-  var data4 = {
-    labels: ["Room D"],
-    series: [[value4]],
+    labels: ["Floor 56", "Floor 68", "Floor 52", "Floor 49", "Floor 52"],
+    series: [[value1, value2, value3, value4, value5]],
+
   };
 
+
   var options = {
-    high: 200,
+
     low: 0,
-    width: 200,
+
     axisX: {
       labelInterpolationFnc: function (value, index) {
-        return index % 2 === 0 ? value : null;
+        return index % 1 === 0 ? value : null;
       },
     },
   };
@@ -49,29 +42,12 @@ const RenewableAmount = () => {
 
   return (
     <>
+          <div className="column2">
       <h4>Renewable</h4>
-      <div className="row">
+
         <ChartistGraph
-          style={{ width: 200 }}
+          style={{ width: 600 }}
           data={data}
-          options={options}
-          type={type}
-        />
-        <ChartistGraph
-          style={{ width: 200 }}
-          data={data2}
-          options={options}
-          type={type}
-        />
-        <ChartistGraph
-          style={{ width: 200 }}
-          data={data3}
-          options={options}
-          type={type}
-        />
-        <ChartistGraph
-          style={{ width: 200 }}
-          data={data4}
           options={options}
           type={type}
         />

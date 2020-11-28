@@ -31,13 +31,13 @@ const RenewableSeasonal = () => {
       <div className="row">
         <ChartistGraph data={data} options={options} type={type} />
         <div>
-          <div className="textStyle">Room A</div> <div></div>
+          <div className="textStyle">Floor 54</div> <div></div>
           <div className="box red"></div>
-          <div className="textStyle">Room B</div> <div></div>
+          <div className="textStyle">Floor 42</div> <div></div>
           <div className="box yellow"></div>
-          <div className="textStyle">Room C</div> <div></div>
+          <div className="textStyle">Floor 67</div> <div></div>
           <div className="box orange"></div>
-          <div className="textStyle">Room D</div> <div></div>
+          <div className="textStyle">Floor 63</div> <div></div>
           <div className="box lightRed"></div>
         </div>
       </div>
