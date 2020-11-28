@@ -1,3 +1,23 @@
+Alertit:
+
+1. hyvä sää, 70% enemmän energiaa
+2. huoneessa X aurinkopaneeli rikki
+3. room B dangerously low air quality
+
+
+
+IDEA:
+
+- pitäisikö alertit jotenkin linkata olemassa oleviin kuvaajiin? 
+  esimerkiksi nuolella tms.
+
+
+
+- kerättävä ulkoinen data: prosentti siitä, kuinka paljon auringonvaloa vuorokaudessa
+  on
+
+
+
 
 
 - AlertSection.jsx:ään erilaisia alertteja liittyen esimerkiksi seuraaviin tilanteisiin:
