@@ -3,7 +3,7 @@ import ChartistGraph from "react-chartist";
 
 const RenewableSeasonal = () => {
   var data = {
-    labels: ["2016", "2017", "2018", "2019", "2020"],
+    labels: ["Q1", "Q2", "Q3", "Q4"],
     series: [
       [94, 60, 30, 55, 60],
       [13, 45, 29, 85, 93],
@@ -27,7 +27,7 @@ const RenewableSeasonal = () => {
 
   return (
     <>
-      <h4>Renewable</h4>
+      <h4>Renewable energy of different floors over time</h4>
       <div className="row">
         <ChartistGraph data={data} options={options} type={type} />
         <div>

@@ -8,7 +8,7 @@ import RenewableSeasonal from "./components/RenewableSeasonal";
 const DashboardSection = () => {
   return (
     <>
-      <h3>Renewable Energy Section</h3>
+      <h3>Renewable Energy Section - Solar Panels</h3>
       <div className="row">
       <RenewableAmount></RenewableAmount>
       <RenewableTotal></RenewableTotal>

@@ -43,7 +43,7 @@ const RenewableAmount = () => {
   return (
     <>
           <div className="column2">
-      <h4>Renewable</h4>
+      <h4>Real time renewable energy / floor</h4>
 
         <ChartistGraph
           style={{ width: 600 }}

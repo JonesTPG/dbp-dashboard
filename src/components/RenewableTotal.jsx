@@ -2,14 +2,20 @@ import React, { useState, useEffect } from "react";
 import ChartistGraph from "react-chartist";
 
 const RenewableTotal = () => {
+  const [value1, setValue1] = useState(100);
 
-
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setValue1(Math.floor(Math.random() * 100));
+    }, 10000);
+    return () => clearInterval(interval);
+  }, []);
 
   const data = {
-    labels: ["74%", "26%"],
-    series: [80, 20]
-
+    labels: [value1 + "%",],
+    series: [value1]
   }
+
 
   const options ={
     donut: true,
@@ -17,6 +23,7 @@ const RenewableTotal = () => {
     startAngle: 360,
     total: 100,
     labelOffset: 30,
+  
   }
   
   var type = "Pie";
@@ -25,7 +32,7 @@ const RenewableTotal = () => {
   return (
     <>
     <div className="column3">
-      <h4>Renewable Total</h4>
+      <h4>Total renewable energy</h4>
         <ChartistGraph data={data} options={options} type={type} />
         </div>
     </>
