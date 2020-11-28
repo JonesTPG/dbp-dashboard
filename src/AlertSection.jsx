@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AirQualityAlert from "./components/AirQualityAlert";
+import BadWeatherAlert from "./components/BadWeatherAlert";
+import RenewableAlert from "./components/RenewableAlert";
 
 const AlertSection = () => {
   const [alert1, setAlert1] = useState(false);
@@ -10,24 +12,24 @@ const AlertSection = () => {
   useEffect(() => {
     setTimeout(() => {
       setAlert1(true);
-    }, 10000);
+    }, 1000);
     setTimeout(() => {
       setAlert2(true);
-    }, 20000);
+    }, 2000);
     setTimeout(() => {
       setAlert3(true);
-    }, 40000);
+    }, 4000);
     setTimeout(() => {
       setAlert4(true);
-    }, 50000);
+    }, 5000);
   }, []);
 
   return (
     <>
       <h4>Data Analytics Alerts</h4>
       {alert1 ? <AirQualityAlert></AirQualityAlert> : <p>no alerts</p>}
-      {alert2 ? <AirQualityAlert></AirQualityAlert> : null}
-      {alert3 ? <AirQualityAlert></AirQualityAlert> : null}
+      {alert2 ? <BadWeatherAlert></BadWeatherAlert> : null}
+      {alert3 ? <RenewableAlert></RenewableAlert> : null}
       {alert4 ? <AirQualityAlert></AirQualityAlert> : null}
     </>
   );
