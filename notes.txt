@@ -5,7 +5,7 @@
     * huonoa säätä luvassa, odotettavissa 40% vähemmän energiaa kuin viime viikkona
       -> skyscraperin oma sähköntuotanto ei riitä, pitää ostaa muualta
     * huoneessa X ei ole kerätty energiaa tänään, aurinkopaneeli voi olla rikki
-
+      -> anomaly detection
 - lisätään DashboardSection.jsx:ään kuvaajia liittyen kerättyyn aurinkoenergiaan
 
 - lisätään mahdollisesti DashboardSection.jsx:ään kuvaajia liittyen sääennusteeseen
