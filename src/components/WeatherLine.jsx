@@ -1,16 +1,25 @@
 import React from "react";
 import ChartistGraph from "react-chartist";
 
-const RenewableAlert = () => {
+const WeatherLine = () => {
   var data = {
-    labels: ["1.1.", "2.1.", "3.1.", "4.1."],
-    series: [[300, 250, 320, 0, 0]],
+    labels: [
+      "1.1.",
+      "7.1.",
+      "14.1.",
+      "21.1.",
+      "28.1.",
+      "4.2.",
+      "11.2.",
+      "18.2.",
+    ],
+    series: [[50, 45, 40, 35, 50, 60, 43, 34]],
   };
 
   var options = {
-    high: 400,
+    high: 100,
     low: 0,
-    width: 300,
+    width: 600,
     axisX: {
       labelInterpolationFnc: function (value, index) {
         return index % 1 === 0 ? value : null;
@@ -19,12 +28,11 @@ const RenewableAlert = () => {
   };
 
   var type = "Line";
-
   return (
     <>
       <div className="row">
         <ChartistGraph
-          style={{ width: 300 }}
+          style={{ width: 600 }}
           data={data}
           options={options}
           type={type}
@@ -34,20 +42,12 @@ const RenewableAlert = () => {
           <br></br>
           <br></br>
           <br></br>
-          <div className="textStyle">Produced energy in a day (MegaJoule)</div>
-          <div></div>
+          <div className="textStyle">% of sunlight in a day</div> <div></div>
           <div className="box red"></div>
         </div>
-        <p>
-          <br></br>
-          <br></br>
-          Solar panel at Room 364 has not been producing energy in the last 2
-          days. The panel might be broken.
-        </p>
-        <img src="img/skyscraper.png"></img>
       </div>
     </>
   );
 };
 
-export default RenewableAlert;
+export default WeatherLine;

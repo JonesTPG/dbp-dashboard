@@ -7,7 +7,6 @@ const AlertSection = () => {
   const [alert1, setAlert1] = useState(false);
   const [alert2, setAlert2] = useState(false);
   const [alert3, setAlert3] = useState(false);
-  const [alert4, setAlert4] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,9 +18,6 @@ const AlertSection = () => {
     setTimeout(() => {
       setAlert3(true);
     }, 4000);
-    setTimeout(() => {
-      setAlert4(true);
-    }, 5000);
   }, []);
 
   return (
@@ -30,7 +26,6 @@ const AlertSection = () => {
       {alert1 ? <AirQualityAlert></AirQualityAlert> : <p>no alerts</p>}
       {alert2 ? <BadWeatherAlert></BadWeatherAlert> : null}
       {alert3 ? <RenewableAlert></RenewableAlert> : null}
-      {alert4 ? <AirQualityAlert></AirQualityAlert> : null}
     </>
   );
 };
