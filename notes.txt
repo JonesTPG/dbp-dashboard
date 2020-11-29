@@ -1,3 +1,13 @@
+
+- pitäisikö eri osa-alueet erotella viivoilla ja eri background väreillä?
+- tarkista, onko dashboardin tekstit loogisia "ulkopuolisen" näkökulmasta
+
+
+
+
+
+
+
 Alertit:
 
 1. hyvä sää, 70% enemmän energiaa
