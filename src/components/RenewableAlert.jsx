@@ -44,7 +44,7 @@ const RenewableAlert = () => {
           Solar panel at Room 364 has not been producing energy in the last 2
           days. The panel might be broken.
         </p>
-        <img alt="skyscraper image" src="img/skyscraper.png"></img>
+        <img alt="skyscraper anomaly" src="img/skyscraper.png"></img>
       </div>
     </>
   );
