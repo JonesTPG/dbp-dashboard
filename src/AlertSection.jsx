@@ -23,9 +23,23 @@ const AlertSection = () => {
   return (
     <>
       <h4>Data Analytics Alerts</h4>
-      {alert1 ? <AirQualityAlert></AirQualityAlert> : <p>no alerts</p>}
-      {alert2 ? <BadWeatherAlert></BadWeatherAlert> : null}
-      {alert3 ? <RenewableAlert></RenewableAlert> : null}
+      {alert1 ? (
+        <div className="air-alert">
+          <AirQualityAlert></AirQualityAlert>
+        </div>
+      ) : (
+        <p>no alerts</p>
+      )}
+      {alert2 ? (
+        <div className="weather-alert">
+          <BadWeatherAlert></BadWeatherAlert>
+        </div>
+      ) : null}
+      {alert3 ? (
+        <div className="renewable-alert">
+          <RenewableAlert></RenewableAlert>
+        </div>
+      ) : null}
     </>
   );
 };

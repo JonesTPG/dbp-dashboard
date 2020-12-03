@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.column2{
+.column2 {
   flex: 50%;
 }
 
-.column3{
+.column3 {
   flex: 50%;
   text-align: center;
 }
@@ -28,24 +28,54 @@
 }
 
 .yellow {
-  background-color: #F5C63E;
+  background-color: #f5c63e;
 }
 
 .red {
-  background-color:#D71E05;
+  background-color: #d71e05;
 }
 
 .orange {
-  background-color:#D17905;
+  background-color: #d17905;
 }
 
 .lightRed {
-  background-color: #F05B4F;
+  background-color: #f05b4f;
 }
 
 .textStyle {
   font-size: smaller;
   margin-bottom: 5px;
   font-weight: 600;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.renewable {
+  background-color: lightgreen;
+  opacity: 0.8;
+}
+
+.air {
+  background-color: lightskyblue;
+  opacity: 0.8;
+}
+
+.weather {
+  background-color: lightcoral;
+  opacity: 0.8;
+}
+
+.renewable-alert {
+  background-color: lightgreen;
+  opacity: 0.8;
+}
+
+.air-alert {
+  background-color: lightskyblue;
+  opacity: 0.8;
+}
+
+.weather-alert {
+  background-color: lightcoral;
+  opacity: 0.8;
 }
